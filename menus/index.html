@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus - Erhart's Catering</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/interior-styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-image">
+                <img src="../assets/images/Header_ErhartsCatering.jpg" alt="Erhart's Catering" width="973" height="152">
+            </div>
+            <div class="logo-link">
+                <a href="../index.html" aria-label="Erhart's Catering Home">
+                    <img src="../assets/images/PixelClear.gif" alt="Erhart's Catering" width="190" height="85">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-navigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../venues/">Venues</a></li>
+                <li class="dropdown active">
+                    <a href="../menus/">Menus</a>
+                </li>
+                <li><a href="../services/">Services</a></li>
+                <li><a href="../company/about-erharts.html">About Us</a></li>
+                <li><a href="../company/contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="interior-layout">
+                <div class="content-area">
+                    <h1>Our Catering Menus</h1>
+                    <p>Erhart's Catering offers a variety of menu options to suit every taste and occasion. From elegant plated dinners to casual buffets, our culinary team creates memorable dining experiences.</p>
+                    
+                    <div class="menu-categories">
+                        <h2>Menu Options:</h2>
+                        <ul>
+                            <li><strong>San Pedro Restaurant</strong> - Fine dining experience at our flagship location</li>
+                            <li><strong>Off-Premise Catering</strong> - Bringing excellence to your chosen venue</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="menu-highlights">
+                        <h3>Our Specialties Include:</h3>
+                        <ul>
+                            <li>Corporate breakfast and lunch options</li>
+                            <li>Elegant wedding receptions</li>
+                            <li>Holiday party menus</li>
+                            <li>Cocktail party hors d'oeuvres</li>
+                            <li>Custom menu creation</li>
+                        </ul>
+                    </div>
+                    
+                    <p>For detailed menu information and pricing, please <a href="../company/contact-us.html">contact our catering team</a>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../venues/">Venues</a>
+                <a href="../menus/">Menus</a>
+                <a href="../services/">Services</a>
+                <a href="../company/about-erharts.html">About Us</a>
+                <a href="../company/contact-us.html">Contact Us</a>
+            </nav>
+            <div class="footer-info">
+                <p>Copyright <span id="currentYear"></span> Erhart's Catering | Tel: 714.826.3350</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venues - Erhart's Catering</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/interior-styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-image">
+                <img src="../assets/images/Header_ErhartsCatering.jpg" alt="Erhart's Catering" width="973" height="152">
+            </div>
+            <div class="logo-link">
+                <a href="../index.html" aria-label="Erhart's Catering Home">
+                    <img src="../assets/images/PixelClear.gif" alt="Erhart's Catering" width="190" height="85">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-navigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown active">
+                    <a href="../venues/">Venues</a>
+                </li>
+                <li><a href="../menus/">Menus</a></li>
+                <li><a href="../services/">Services</a></li>
+                <li><a href="../company/about-erharts.html">About Us</a></li>
+                <li><a href="../company/contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="interior-layout">
+                <div class="content-area">
+                    <h1>Our Catering Venues</h1>
+                    <p>Erhart's Catering offers exceptional service at multiple venues throughout Southern California. Each location provides unique ambiance and amenities to make your event memorable.</p>
+                    
+                    <div class="venue-list">
+                        <h2>Available Venues:</h2>
+                        <ul>
+                            <li>San Pedro, CA</li>
+                            <li>Cerritos, CA</li>
+                            <li>Diamond Bar, CA</li>
+                            <li>Fullerton, CA</li>
+                            <li>Los Angeles, CA</li>
+                            <li>Pomona, CA</li>
+                            <li>Santa Fe Springs, CA</li>
+                        </ul>
+                    </div>
+                    
+                    <p>For more information about our venues and availability, please <a href="../company/contact-us.html">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../venues/">Venues</a>
+                <a href="../menus/">Menus</a>
+                <a href="../services/">Services</a>
+                <a href="../company/about-erharts.html">About Us</a>
+                <a href="../company/contact-us.html">Contact Us</a>
+            </nav>
+            <div class="footer-info">
+                <p>Copyright <span id="currentYear"></span> Erhart's Catering | Tel: 714.826.3350</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

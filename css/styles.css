@@ -1,0 +1,409 @@
+/* Mobile-First Responsive CSS for Erhart's Catering */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #535353;
+    color: #000;
+}
+
+.container {
+    max-width: 973px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Typography */
+h1 {
+    color: #fcbc1d;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #b0d516;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #fcbc1d;
+    text-decoration: none;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #383838;
+    padding: 20px 0;
+    position: relative;
+}
+
+.header-image {
+    text-align: center;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-link {
+    position: absolute;
+    left: 60px;
+    top: 65px;
+    z-index: 10;
+}
+
+.tagline-slides {
+    position: absolute;
+    right: 60px;
+    top: 77px;
+    z-index: 10;
+}
+
+/* Navigation Styles */
+.main-navigation {
+    background-color: #535353;
+    border-bottom: 2px solid #fcbc1d;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-menu li {
+    position: relative;
+    margin: 0 5px;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #fcbc1d;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #850200;
+    border: 1px solid #fff;
+    list-style: none;
+    min-width: 200px;
+    z-index: 100;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 8px 15px;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Main Content */
+.main-content {
+    background: #535353 url(../assets/images/BG_BodyMiddle.gif) repeat-y center top;
+    min-height: 400px;
+    padding: 20px 0;
+}
+
+.home-columns {
+    display: flex;
+    flex-wrap: wrap;
+    background: url(../assets/images/BG_HomeColumns.gif) repeat-y;
+    padding: 20px;
+    gap: 20px;
+}
+
+.home-column-left {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px 15px;
+    color: #fff;
+}
+
+.home-column-left p {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.intro-text {
+    color: #fc0 !important;
+    position: relative;
+}
+
+.opening-letter {
+    float: left;
+    margin: -5px 10px 0 -16px;
+}
+
+.home-column-right {
+    flex: 2;
+    min-width: 320px;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+}
+
+.hero-slideshow,
+.slideshow {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slideshow {
+    margin-bottom: 10px;
+}
+
+.hero-slideshow img {
+    border: 5px solid #db6118;
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom-slideshows {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.slideshow {
+    flex: 1;
+    min-width: 180px;
+}
+
+.slideshow img {
+    border: 5px solid #db6118;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Slide Animation */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    position: relative;
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #383838;
+    padding: 20px 0;
+    color: #000;
+    font-size: 12px;
+}
+
+.footer-nav {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-nav a {
+    padding: 0 15px;
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+/* Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .home-columns {
+        flex-direction: column;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .dropdown-menu {
+        position: static;
+        display: none;
+        background-color: #700200;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .logo-link,
+    .tagline-slides {
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .bottom-slideshows {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-nav a {
+        display: block;
+        padding: 8px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    
+    .container {
+        padding: 0 5px;
+    }
+    
+    .main-header {
+        padding: 10px 0;
+    }
+    
+    .home-column-left {
+        padding: 15px 10px;
+    }
+    
+    .home-column-left p {
+        font-size: 12px;
+    }
+    
+    .nav-menu a {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+    
+    .opening-letter {
+        margin: -3px 8px 0 -10px;
+        width: 50px;
+        height: auto;
+    }
+}
+
+/* High Resolution Desktop */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .home-columns {
+        gap: 40px;
+    }
+    
+    .bottom-slideshows {
+        gap: 20px;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    .slide {
+        transition: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main-navigation,
+    .slideshow,
+    .footer-nav {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .main-content {
+        background: white;
+    }
+}

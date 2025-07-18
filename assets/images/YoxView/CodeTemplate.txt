@@ -1,0 +1,16 @@
+﻿<script type="text/javascript">
+    $(document).ready(function () {
+        $("#[YoxViewDivID]").yoxview({
+            dataUrl: 'http://picasaweb.google.com/[PicasaAccountID]/[PicasaGalleryID]',
+            dataSourceOptions: {
+                "max-results": [MaxResults],
+                imgmax: [ImgMaxSize]
+            }
+        });
+    });
+</script>
+
+<div class="[CssClass]">
+    <h2>[GalleryTitle]</h2>
+    <div id="[YoxViewDivID]" class="[CssClass_YoxViewDiv]"></div>
+</div>
